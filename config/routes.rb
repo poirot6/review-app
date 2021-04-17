@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  get 'reviews/index'
   root 'homes#top'
-  
-  resources :ramen_shops, only: [:index, :show]
+  devise_for :users
+  resources :ramen_shops do
+    resources :reviews, only: [:index, :create]
+  end
 end

@@ -5,9 +5,9 @@ class ApplicationController < ActionController::Base
     ramen_shops_path
   end
   
-  #def after_sign_in_path_for(resource)
-    #ramen_shops_path
-  #end
+  def after_sign_in_path_for(resource)
+    ramen_shops_path
+  end
 
   protected
   def configure_permitted_parameters
