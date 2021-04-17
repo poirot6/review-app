@@ -1,0 +1,2 @@
+class RamenShop < ApplicationRecord
+end
